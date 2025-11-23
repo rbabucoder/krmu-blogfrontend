@@ -1,6 +1,7 @@
 // import { BlogFeaturedMedia } from "./single-blog";
 
-import { ImageAsset } from "../phd-programmes";
+import { ImageAsset } from "../common";
+
 
 export type MainBlogResponse = MainBlogs[];
 

@@ -261,3 +261,9 @@ export interface SchoolSEOResponse {
 export interface SchoolSEO {
   school_seo: SEO;
 }
+
+export interface ImageAsset {
+  id: number;
+  documentId: string;
+  url: string;
+}
