@@ -15,24 +15,11 @@ export default function Pagination({ currentPage, totalPages, pageNumbers }: Pro
   const router = useRouter();
   const searchParams = useSearchParams(); // 👈 detect URL change
 
-  // const handlePageChange = (page: number) => {
-  //   setLoading(true);
-  //   router.push(`?page=${page}`);
-  //   // window.scrollTo({ top: 0, behavior: "smooth" }); // optional nice UX
-  // };
-
- const handlePageChange = (page: number) => {
-  setLoading(true);
-  let currentPath = window.location.pathname;
-
-  // ⭐ Always ensure trailing slash before query
-  if (!currentPath.endsWith("/")) {
-    currentPath = currentPath + "/";
-  }
-
-  router.push(`${currentPath}?page=${page}`);
-};
-
+  const handlePageChange = (page: number) => {
+    setLoading(true);
+    router.push(`?page=${page}`);
+    // window.scrollTo({ top: 0, behavior: "smooth" }); // optional nice UX
+  };
 
   // 👇 whenever the URL query changes, hide loader
   useEffect(() => {
