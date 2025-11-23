@@ -13,7 +13,7 @@ const HIDE_CATEGORIES: string[] = [
   "school-of-management-and-commerce",
   "travel-and-tourism",
   "education",
-  "uncategorized"
+  "uncategorized",
   // Add more slugs you want to show...
 ];
 
@@ -21,7 +21,14 @@ const CommonBlogSidebar = async () => {
   const allCategories = await getAllBlogCategories();
 
   return (
-    <aside className="bg-[url(/sidebarBanner.webp)] bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl">
+    <aside
+      className="bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl"
+      style={{
+        background: `url(/sidebarBanner.webp)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <h4 className="mb-5 text-white text-[32px]">Blog Categories</h4>
 
       <ul>

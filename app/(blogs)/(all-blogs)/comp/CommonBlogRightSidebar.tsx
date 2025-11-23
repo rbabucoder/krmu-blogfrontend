@@ -7,7 +7,14 @@ const CommonBlogRightSidebar = async () => {
   const recentPosts = await getRecentPosts();
 
   return (
-    <aside className="bg-[url(/sidebarBanner.webp)] bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl">
+    <aside
+      className="bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl"
+      style={{
+        background: `url(/sidebarBanner.webp)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div>
         <CommonBlogSidebarSearchField />
       </div>
