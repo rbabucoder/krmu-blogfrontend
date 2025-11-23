@@ -21,7 +21,7 @@ const CommonBlogSidebar = async () => {
   const allCategories = await getAllBlogCategories();
 
   return (
-    <aside className="bg-[url(/blogs/sidebarBanner.webp)] bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl">
+    <aside className="bg-[url(/sidebarBanner.webp)] bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl">
       <h4 className="mb-5 text-white text-[32px]">Blog Categories</h4>
 
       <ul>

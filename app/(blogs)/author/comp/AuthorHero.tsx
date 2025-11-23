@@ -10,7 +10,7 @@ type Props = {
 const AuthorHero = ({ imgUrl, AuthName, AuthDesg, AuthAbout }: Props) => {
   return (
     <>
-      <div className="bg-[url(/blogs/auth-bg.jpg)] bg-cover bg-no-repeat bg-center pt-[144.188px] pb-[15px] px-[15px] sm:pb-[18px] sm:px-[22px] flex flex-col sm:flex-row text-center sm:text-left gap-5 items-center">
+      <div className="bg-[url(/auth-bg.jpg)] bg-cover bg-no-repeat bg-center pt-[144.188px] pb-[15px] px-[15px] sm:pb-[18px] sm:px-[22px] flex flex-col sm:flex-row text-center sm:text-left gap-5 items-center">
         <div className="w-24 h-24">
           <div className="w-full h-full rounded-full overflow-hidden">
             <Image
