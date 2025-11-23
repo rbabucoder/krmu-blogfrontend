@@ -21,11 +21,18 @@ export default function Pagination({ currentPage, totalPages, pageNumbers }: Pro
   //   // window.scrollTo({ top: 0, behavior: "smooth" }); // optional nice UX
   // };
 
-  const handlePageChange = (page: number) => {
+ const handlePageChange = (page: number) => {
   setLoading(true);
-  const currentPath = window.location.pathname;
+  let currentPath = window.location.pathname;
+
+  // ⭐ Always ensure trailing slash before query
+  if (!currentPath.endsWith("/")) {
+    currentPath = currentPath + "/";
+  }
+
   router.push(`${currentPath}?page=${page}`);
 };
+
 
   // 👇 whenever the URL query changes, hide loader
   useEffect(() => {
