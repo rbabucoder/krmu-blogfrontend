@@ -35,6 +35,7 @@ const CommonBlogRightSidebar = async () => {
                   dangerouslySetInnerHTML={{
                     __html: post?.title?.rendered,
                   }}
+                  target="_blank"
                 />
               </article>
             );
