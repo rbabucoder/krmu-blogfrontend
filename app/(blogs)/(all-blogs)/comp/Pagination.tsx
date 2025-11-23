@@ -65,7 +65,7 @@ export default function Pagination({ currentPage, totalPages, pageNumbers }: Pro
       )}
 
       {loading && (
-        <Image src="/preloader/preloader.gif" width={18} height={18} alt="Preloader" />
+        <Image src="/preloader.gif" width={18} height={18} alt="Preloader" />
       )}
     </div>
   );
