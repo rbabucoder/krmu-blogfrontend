@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // output: "export",
-  basePath: "/blog",
-  // assetPrefix: "https://www.krmangalam.edu.in/blog",
+  // basePath: "/blog3",
+  assetPrefix: "https://www.krmangalam.edu.in/blog",
   images: {
     remotePatterns: [
       {
